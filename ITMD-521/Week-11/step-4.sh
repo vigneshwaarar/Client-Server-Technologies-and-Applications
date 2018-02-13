@@ -1,0 +1,1 @@
+sqoop import --connect jdbc:mysql://localhost/hadoopguide --username root --password itmd521 --query "select * from widgets where id>=1000 and id<=3000 and \$CONDITIONS" -m 1 --target-dir /user/vagrant/widgets
